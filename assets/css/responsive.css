@@ -1,0 +1,130 @@
+ /* chi tren pc */
+@media (min-width:1023px){
+    .on--light .about,
+    .on--light .education,
+    .on--light .skills,
+    .on--light .contact{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    .on--light .header{
+        /* transition: 2s; */
+        opacity: 0;
+    }
+    .on--light .home .container .home__light{
+        transition: opacity 0.5s;
+        opacity: 0;
+    }
+    .on--light .home .container .home__img{
+        transition: opacity 1s;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@media (max-width:1023px){
+    .form-button {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+}
+@media (min-width:740px) and (max-width:1023px){
+    .hide-on-tablet {
+        display: none;
+    }
+    
+    
+    
+    /* .home__light {
+        position: fixed;
+        top: 30vh;
+        height: 100px;
+        width: 100px;
+        z-index: 2;
+        background-color: rgb(12, 10, 10);
+    } */
+    .home__img {
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+    }
+    .about__content {
+        margin: 20px 0;
+        text-align: justify;
+    }
+    .about__content-title {
+        text-align: center;
+    }
+    .education__item {
+        margin: 10px 0;
+    }
+}
+@media (max-width:739px) {
+    html,body {
+        overflow-x: hidden; 
+    }
+    
+    .nav {
+        position: relative;
+    }
+    .nav__logo {
+        padding: 10px;
+    }
+    .nav__list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.521);
+    }
+    .nav__item {
+        padding: 10px 0;
+    }
+    
+    .button-nav__nut-close{
+        display: block;
+        color: white;
+        font-size: 1.4rem;
+        cursor: pointer;
+        transform: translateY(20px);
+    }
+    
+    .button-nav{
+        display: block;
+        padding: 0 10px;
+    }
+    .button-nav__nut{
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        
+    }
+    .home__img {
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+    }
+    .about__content {
+        margin: 10px 0;
+        padding: 0 15px;
+    }
+    .about__content-title {
+        text-align: center;
+    }
+    .education__item {
+        margin: 10px 0;
+    }
+    .skills__item {
+        padding: 20px 20px;
+    }
+    .hide-on-mobile{
+        display: none;
+        transform: 0.4s;
+    }
+}
