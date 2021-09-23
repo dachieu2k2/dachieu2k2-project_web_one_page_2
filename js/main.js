@@ -1,5 +1,6 @@
 var turnOnLight = document.querySelector('.onlight');
 const body = document.querySelector('body');
+const scrollTopBtn = document.querySelector('.scrollTopBtn');
 //home
 turnOnLight.onclick = function () {
     // console.log(turnOnLight);
@@ -101,7 +102,14 @@ if (body.classList.length === 0 || window.innerWidth < 1024){
         
         // console.log(key);
     } )
-    
+    //button 
+    if(scroll_postition == 0){
+        turnOnLight.style = "visibility:visible;"
+        scrollTopBtn.style = 'display:none;';
+    }else{
+        turnOnLight.style = "visibility:hidden;"
+        scrollTopBtn.style = 'display:flex;'
+    }
     //navbar
     if(scroll_postition >= (sections[1].offsetTop - sections[1].clientHeight / 5)){
         header.style.backgroundColor = "var(--black-color)"

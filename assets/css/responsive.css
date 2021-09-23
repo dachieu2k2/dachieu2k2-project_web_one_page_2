@@ -65,7 +65,10 @@
     html,body {
         overflow-x: hidden; 
     }
-    
+    .scrollTopBtn{
+        bottom: 20px;
+        right: 20px;
+    }
     .nav {
         position: relative;
     }
