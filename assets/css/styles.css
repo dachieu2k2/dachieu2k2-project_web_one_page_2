@@ -197,7 +197,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(200px);
     opacity: 0;
 }
 .about__img-link{
@@ -206,7 +205,6 @@ html {
 }
 .about__content {
     padding: 0 30px 0px 0;
-    transform: translateY(200px);
     opacity: 0;
     animation-delay: 1s;
 }
@@ -426,6 +424,11 @@ circle {
     
     100%{
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes hienra {
+    100%{
         opacity: 1;
     }
 }

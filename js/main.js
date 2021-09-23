@@ -47,13 +47,16 @@ function animationBottomtoTop(something){
     //     e.style = `opacity: 0;`;
     // } )
     selectorAllElements.forEach((e,key) =>{
-        e.style = `animation: 1s bottom-to-top linear ${key}s forwards;`
+        e.style = `animation: 0.4s bottom-to-top linear .${key}s forwards;`
     } )
 }
 
 const skillItemPercent = document.querySelectorAll('.skills__item-percent');
 const skillsItemLineInline = document.querySelectorAll('.skills__item-line-inline');
-
+skillItemPercent.forEach((e,key) =>{
+        
+    console.log(key * 0.8);
+} )
 for(var i=0;i<skillItemPercent.length;i++){
     skillsItemLineInline[i].style.width = 0;
 }
@@ -78,7 +81,6 @@ const navItem = document.querySelectorAll('.nav__item');
 const header = document.querySelector('.header');
 const svg = document.querySelectorAll('svg');
 let count=0;
-console.log(body.classList.length);
 
 console.log();
 document.addEventListener('scroll', function(){
@@ -118,15 +120,15 @@ if (body.classList.length === 0 || window.innerWidth < 1024){
     }
     //about
     if(scroll_postition >= (sections[1].offsetTop - sections[1].clientHeight / 5)){
-        document.querySelector('.about__img').style = ` animation: bottom-to-top cubic-bezier(0.4, 0, 1, 1) 1s forwards;`;
-        document.querySelector('.about__content').style = ` animation: 1s bottom-to-top cubic-bezier(0.4, 0, 1, 1) 1s forwards;`;
+        document.querySelector('.about__img').style = ` animation: hienra cubic-bezier(0.4, 0, 1, 1) 1s forwards;`;
+        document.querySelector('.about__content').style = ` animation: 1s hienra cubic-bezier(0.4, 0, 1, 1) 0.5s forwards;`;
         
     }
     //education
     if(scroll_postition >= (sections[2].offsetTop - sections[2].clientHeight / 5)){
         var educationElements = document.querySelectorAll('.education__item');
         educationElements.forEach((e,key) =>{
-        e.style = `animation: 1s bottom-to-top linear ${key}s forwards;`
+        e.style = `animation: 0.6s bottom-to-top linear ${key * 0.8}s forwards;`
         } )
     }
 
