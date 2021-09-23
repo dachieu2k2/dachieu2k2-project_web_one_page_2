@@ -39,24 +39,8 @@ function animationPercent(element, value, time){
     }, time);
 }
 
-function animationBottomtoTop(something){
-    var selectorAllElements = document.querySelectorAll(something);
-    
-    // selectorAllElements.forEach(e =>{
-    //     e.style = `transform: translateY(200px);`;
-    //     e.style = `opacity: 0;`;
-    // } )
-    selectorAllElements.forEach((e,key) =>{
-        e.style = `animation: 0.4s bottom-to-top linear .${key}s forwards;`
-    } )
-}
-
 const skillItemPercent = document.querySelectorAll('.skills__item-percent');
 const skillsItemLineInline = document.querySelectorAll('.skills__item-line-inline');
-skillItemPercent.forEach((e,key) =>{
-        
-    console.log(key * 0.8);
-} )
 for(var i=0;i<skillItemPercent.length;i++){
     skillsItemLineInline[i].style.width = 0;
 }
@@ -128,7 +112,7 @@ if (body.classList.length === 0 || window.innerWidth < 1024){
     if(scroll_postition >= (sections[2].offsetTop - sections[2].clientHeight / 5)){
         var educationElements = document.querySelectorAll('.education__item');
         educationElements.forEach((e,key) =>{
-        e.style = `animation: 0.6s bottom-to-top linear ${key * 0.8}s forwards;`
+            e.style = `animation: 1s bottom-to-top linear ${key * 0.5}s forwards;`
         } )
     }
 
@@ -165,3 +149,7 @@ for(var i=0;i<skillItemPercent.length;i++){
 })
     
 // console.log(svg);
+console.warn('CẢnh báo cực mạnh');
+console.error('Operation completed, but that doesn’t mean it’s error free.');
+console.error('Security Alert – Moving cursor is not as safe as you thought.');
+
