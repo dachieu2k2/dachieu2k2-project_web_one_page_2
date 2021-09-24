@@ -153,3 +153,13 @@ console.warn('CẢnh báo cực mạnh');
 console.error('Operation completed, but that doesn’t mean it’s error free.');
 console.error('Security Alert – Moving cursor is not as safe as you thought.');
 
+//form
+valid('.form.form-name');
+valid('.form.form-email');
+valid('.form.form-subject');
+valid('.form-textarea');
+
+var getDataClick = document.querySelector('.btn.btn-fix');
+getDataClick.onclick = function(){
+    getData('input','.form-textarea');
+}

@@ -316,22 +316,27 @@
                 <div class="col l-6 c-12 m-6">
                     <div class="form-container">
                         <div class="form-group">
-                            <input type="text" class="form form-name" placeholder="Name">
+                            <input type="text" name="fullname" rules="required" class="form form-name" placeholder="Name">
+                            <span class="form-message"></span>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form form-email" placeholder="Email">
+                            <input type="text" name="email" rules="required|email"  class="form form-email" placeholder="Email">
+                            <span class="form-message"></span>
                         </div>
 
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form form-subject" placeholder="Subject">
+                        <input type="text" name="messages" rules="required"  class="form form-subject" placeholder="Subject">
+                        <span class="form-message"></span>
                     </div>
                     <div class="form-group">
-                        <textarea type="text" class="form-textarea" placeholder="Message..."></textarea>
+                        <textarea type="text"  name="textarea" rules="required" class="form-textarea" placeholder="Message..."></textarea>
+                        <span class="form-message"></span>
                     </div>
                     <div class="form-button">
                         <div class="btn btn-fix">Send messages</div>
                     </div>
+                
                 </div>
             </div>
 
@@ -349,6 +354,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/valid.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -376,6 +376,7 @@ circle {
 .form-group {
     padding: 5px 0;
     width: 100%;
+    position: relative;
 }
 .form {
     width: 100%;
@@ -384,7 +385,6 @@ circle {
     border: none;
     outline: none;
     padding: 20px 20px;
-    
 }
 .form-name {
     width: 96%;
@@ -408,6 +408,26 @@ circle {
     box-shadow: none;
     height: 40px;
     width: 200px;
+}
+
+.form-error ~ span.form-message {
+    position: absolute;
+    padding: 6px 6px;
+    background-color: black;
+    color: white;
+    top: 72%;
+    left: 0;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+.form-error ~ span.form-message::before {
+    content: "";
+    position: absolute;
+    border-width: 5px 10px;
+    border-style: solid;
+    top: -30%;
+    left: 10%;
+    border-color: transparent transparent var(--black-color) transparent;
 }
 
 .footer__container{
