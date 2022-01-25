@@ -1,9 +1,15 @@
  /* chi tren pc */
 @media (min-width:1023px){
+    .on--light .modal-black{
+        height: 100vh;
+        background-color: black;
+        display: block;
+    }
     .on--light .about,
     .on--light .education,
     .on--light .skills,
-    .on--light .contact{
+    .on--light .contact,
+    .on--light footer{
         visibility: hidden;
         opacity: 0;
         display: none;
